@@ -1,0 +1,12 @@
+[package]
+name = "Granulizor"
+version = "0.1.0"
+authors = ["wulfep <pwulfe@pdx.edu>"]
+
+[dependencies]
+vst = { git = "https://github.com/rust-dsp/rust-vst" }
+hound = "3.4.0"
+
+[lib]
+name = "Granulizor"
+crate-type = ["dylib"]

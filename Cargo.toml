@@ -6,7 +6,10 @@ authors = ["wulfep <pwulfe@pdx.edu>"]
 [dependencies]
 vst = { git = "https://github.com/rust-dsp/rust-vst" }
 hound = "3.4.0"
-nfd = "0.0.4"
+pitch_calc = "0.11.1"
+sample = "0.10.0"
+find_folder = "0.3.0"
+instrument = "0.2.0"
 
 [lib]
 name = "Granulizor"

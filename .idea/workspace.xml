@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7e6e5b7-c16a-4a2c-a03e-71854c4dc64f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pitcher.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wav_parser.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Granulizor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/granulizor.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pitcher.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pitcher.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wav_parser.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/wav_parser.rs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,9 +23,11 @@
     <session id="1990572665">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -41,11 +45,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="rs" value="267" />
           <entry key="toml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Rust" value="267" />
           <entry key="TOML file" value="2" />
         </counts>
       </usages-collector>
@@ -53,35 +59,70 @@
     <session id="290198085">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.4" value="4" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.4" value="5" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="rs" value="10" />
+          <entry key="rs" value="11" />
           <entry key="toml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Rust" value="10" />
+          <entry key="Rust" value="11" />
           <entry key="TOML file" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Rust" value="19672" />
+          <entry key="Rust" value="20103" />
           <entry key="TOML file" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="rs" value="19672" />
+          <entry key="rs" value="20103" />
           <entry key="toml" value="33" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-282865263">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="rs" value="2296" />
+          <entry key="toml" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Rust" value="2296" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="lock" value="1" />
+          <entry key="rs" value="1" />
+          <entry key="toml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Rust" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -91,22 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lib.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="75" column="92" selection-start-line="75" selection-start-column="92" selection-end-line="75" selection-end-column="92" />
-              <folding>
-                <element signature="e#638#639#0" expanded="true" />
-                <element signature="e#675#676#0" expanded="true" />
-                <element signature="e#645#646#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="e#3282#3443#0" />
-                <element signature="e#3501#3687#0" />
-                <element signature="e#3743#3903#0" />
-                <element signature="e#4140#4452#0" />
-                <element signature="e#4229#4370#0" />
-                <element signature="e#4458#4648#0" />
-                <element signature="e#5049#5881#0" />
-                <element signature="e#5773#5903#0" />
-              </folding>
+            <state relative-caret-position="339">
+              <caret line="161" column="21" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -114,8 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pitcher.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-137">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="425">
+              <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -123,27 +150,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wav_parser.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="441">
+              <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
               <folding>
-                <element signature="e#238#239#0" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-                <element signature="e#226#227#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#363#364#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#178#652#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cargo.toml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -162,6 +173,9 @@
       <find>&lt;F&gt;</find>
       <find>init</find>
       <find>samples</find>
+      <find>granu</find>
+      <find>gran</find>
+      <find>pads.wa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,8 +188,9 @@
         <option value="$PROJECT_DIR$/src/WavParser.rs" />
         <option value="$PROJECT_DIR$/src/oscillator.rs" />
         <option value="$PROJECT_DIR$/Cargo.toml" />
-        <option value="$PROJECT_DIR$/src/wav_parser.rs" />
+        <option value="$PROJECT_DIR$/tests/granulizors.rs" />
         <option value="$PROJECT_DIR$/src/pitcher.rs" />
+        <option value="$PROJECT_DIR$/src/wav_parser.rs" />
         <option value="$PROJECT_DIR$/src/lib.rs" />
       </list>
     </option>
@@ -191,31 +206,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Granulizor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Granulizor" type="462c0819:PsiDirectoryNode" />
+              <item name="granulizor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="granulizor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Granulizor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Granulizor" type="462c0819:PsiDirectoryNode" />
+              <item name="granulizor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="granulizor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533951113835" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534285954213" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -229,37 +247,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cargo Command.Test pitcher::tests::test_parse_wav">
-    <configuration name="Test pitcher::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package Granulizor --lib pitcher::tests" />
-      <option name="nocapture" value="true" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Cargo Command.Test pitcher::tests::test_repitch_sample">
     <configuration name="Test pitcher::tests::test_parse_wav" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package Granulizor --lib pitcher::tests::test_parse_wav -- --exact" />
+      <option name="command" value="test --package granulizor --lib pitcher::tests::test_parse_wav -- --exact" />
       <option name="nocapture" value="true" />
       <option name="backtrace" value="SHORT" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="Test tests::test_contents_of_sample" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test pitcher::tests::test_repitch_sample" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package Granulizor --lib tests::test_contents_of_sample -- --exact" />
+      <option name="command" value="test --package granulizor --lib pitcher::tests::test_repitch_sample -- --exact" />
       <option name="nocapture" value="true" />
       <option name="backtrace" value="SHORT" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="Test wav_parser::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test tests::test_find_asset_folder (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package Granulizor --lib wav_parser::tests" />
+      <option name="command" value="test --package granulizor --lib tests::test_find_asset_folder -- --exact" />
+      <option name="nocapture" value="true" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test tests::test_find_asset_folder" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package granulizor --test granulizors tests::test_find_asset_folder -- --exact" />
       <option name="nocapture" value="true" />
       <option name="backtrace" value="SHORT" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -268,7 +286,7 @@
     </configuration>
     <configuration name="Test wav_parser::tests::test_parse_wav" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package Granulizor --lib wav_parser::tests::test_parse_wav -- --exact" />
+      <option name="command" value="test --package granulizor --lib wav_parser::tests::test_parse_wav -- --exact" />
       <option name="nocapture" value="true" />
       <option name="backtrace" value="SHORT" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -276,19 +294,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Cargo Command.Test tests::test_contents_of_sample" />
+      <item itemvalue="Cargo Command.Test tests::test_find_asset_folder" />
+      <item itemvalue="Cargo Command.Test tests::test_find_asset_folder (1)" />
       <item itemvalue="Cargo Command.Test wav_parser::tests::test_parse_wav" />
-      <item itemvalue="Cargo Command.Test wav_parser::tests" />
       <item itemvalue="Cargo Command.Test pitcher::tests::test_parse_wav" />
-      <item itemvalue="Cargo Command.Test pitcher::tests" />
+      <item itemvalue="Cargo Command.Test pitcher::tests::test_repitch_sample" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo Command.Test pitcher::tests::test_parse_wav" />
-        <item itemvalue="Cargo Command.Test pitcher::tests" />
+        <item itemvalue="Cargo Command.Test pitcher::tests::test_repitch_sample" />
         <item itemvalue="Cargo Command.Test wav_parser::tests::test_parse_wav" />
-        <item itemvalue="Cargo Command.Test wav_parser::tests" />
-        <item itemvalue="Cargo Command.Test tests::test_contents_of_sample" />
+        <item itemvalue="Cargo Command.Test pitcher::tests::test_parse_wav" />
+        <item itemvalue="Cargo Command.Test tests::test_find_asset_folder (1)" />
+        <item itemvalue="Cargo Command.Test tests::test_find_asset_folder" />
       </list>
     </recent_temporary>
   </component>
@@ -309,7 +327,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08422175" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08742005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -319,13 +337,13 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.32939914" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49520257" weight="0.32939914" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5026652" side_tool="true" visible="true" weight="0.32939914" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50479746" side_tool="true" visible="true" weight="0.32939914" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -342,10 +360,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Cargo.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Granulizor.iml">
+    <entry file="file://$PROJECT_DIR$/granulizor.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample_reader.rs" />
@@ -357,67 +372,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oscillator.rs">
+    <entry file="file://$PROJECT_DIR$/src/oscillator.rs" />
+    <entry file="file://$PROJECT_DIR$/Cargo.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/wav_parser.rs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Cargo.toml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/granulizors.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wav_parser.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="441">
+          <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
           <folding>
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#178#652#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pitcher.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-137">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="425">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="75" column="92" selection-start-line="75" selection-start-column="92" selection-end-line="75" selection-end-column="92" />
-          <folding>
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#3282#3443#0" />
-            <element signature="e#3501#3687#0" />
-            <element signature="e#3743#3903#0" />
-            <element signature="e#4140#4452#0" />
-            <element signature="e#4229#4370#0" />
-            <element signature="e#4458#4648#0" />
-            <element signature="e#5049#5881#0" />
-            <element signature="e#5773#5903#0" />
-          </folding>
+        <state relative-caret-position="339">
+          <caret line="161" column="21" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Granulizor</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

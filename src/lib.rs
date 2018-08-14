@@ -2,6 +2,7 @@
 extern crate vst;
 extern crate sample;
 extern crate instrument;
+extern crate find_folder;
 pub extern crate hound;
 
 pub mod wav_parser;
@@ -12,29 +13,46 @@ use vst::buffer::AudioBuffer;
 use vst::event::Event;
 use vst::api::{Supported, Events};
 use wav_parser::StereoFrame;
+use std::path::PathBuf;
 
-struct Granulizor{
+pub struct Granulizor{
     grain_size_control: f64,
     sample_start_control: f64,
+    pitch_toggle: f64,
+    sample_select_control: f32,
+    assets_path: PathBuf,
     frames: Vec<StereoFrame>,
     sample_rate: f64,
     time: usize,
-    pitch_toggle: f64,
     note: Option<u8>,
     repitched_sample: Vec<StereoFrame>,
 }
 
 
 impl Granulizor {
-    fn time_per_sample(&self) -> f64 {
-        1.0 / self.sample_rate
+    fn init_assets_path(&mut self) {
+        // The find_folder crate does not work with VSTs, I think this has to do with how the DAW or VST host loads the dll file
+        // For now, the "assets" folder location must be hard coded in.
+        //let mut dll_folder = std::env::current_dir().unwrap();
+        //self.assets_path = find_folder::Search::ParentsThenKids(5, 5).of(dll_folder).for_folder("assets").unwrap();
+        self.assets_path = PathBuf::from("E:\\Devel\\Repositories\\School\\granulizor\\assets\\pads.wav");
+    }
+
+    fn set_sample(&mut self) {
+        if self.sample_select_control < 0.5 {
+            self.assets_path.set_file_name("pads.wav");
+        } else {
+            self.assets_path.set_file_name("plucks.wav"); // Will add more, added 2nd for proof of concept
+        }
+        self.frames = wav_parser::parse_wav(self.assets_path.clone()).unwrap();
     }
 
     fn get_hz(&self) -> f64 {
-        1000.0 / (self.get_grain_size() as f64 / (self.sample_rate/1000.0))
+        // Returns the frequency of the sample based on number of samples and sample rate
+        (self.frames.len() as f64 / 44.1) / 1000.0
     }
 
-    fn midi_pitch_to_hz(pitch: u8) -> f64 {
+    fn midi_pitch_to_hz(pitch: u8) -> f64 { // From vst crate's sine synth example
         const A4_PITCH: i8 = 69;
         const A4_FREQ: f64 = 440.0;
 
@@ -84,17 +102,21 @@ impl Granulizor {
 
 impl Default for Granulizor {
     fn default() -> Granulizor {
-        let sample_rate = 44100.0;
-        Granulizor {
+        let mut g = Granulizor {
             grain_size_control: 1_f64,
             sample_start_control: 0.0,
-            frames: wav_parser::parse_wav("E:\\Devel\\Repositories\\School\\Granulizor\\assets\\pads.wav").unwrap(),
-            sample_rate,
-            time: 0,
             pitch_toggle: 0.0,
+            sample_select_control: 0.0,
+            assets_path: PathBuf::new(),
+            frames: Vec::new(),
+            sample_rate: 44100.0,
+            time: 0,
             note: None,
             repitched_sample: Vec::new(),
-        }
+        };
+        g.init_assets_path();
+        g.set_sample();
+        g
     }
 }
 
@@ -105,7 +127,7 @@ impl Plugin for Granulizor {
             unique_id: 102090,
             inputs: 2,
             outputs: 2,
-            parameters: 3,
+            parameters: 4,
             category: Category::Synth,
             initial_delay: 0,
             ..Info::default()
@@ -118,6 +140,7 @@ impl Plugin for Granulizor {
             0 => self.grain_size_control as f32,
             1 => self.sample_start_control as f32,
             2 => self.pitch_toggle as f32,
+            3 => self.sample_select_control,
             _ => 0.0,
         }
     }
@@ -127,6 +150,10 @@ impl Plugin for Granulizor {
             0 => self.grain_size_control = value as f64,
             1 => self.sample_start_control = value.min(0.99) as f64,
             2 => self.pitch_toggle = value as f64,
+            3 => {
+                self.sample_select_control = value;
+                self.set_sample();
+            },
             _ => (),
         }
     }
@@ -136,6 +163,7 @@ impl Plugin for Granulizor {
             0 => "Grain Size".to_string(),
             1 => "Sample Start".to_string(),
             2 => "Toggle Pitched Mode".to_string(),
+            3 => "Sample Select".to_string(),
             _ => "".to_string(),
         }
     }
@@ -148,6 +176,12 @@ impl Plugin for Granulizor {
                 "On".to_string()
             } else {
                 "Off".to_string()
+            },
+            3 => {
+                match self.assets_path.file_name() {
+                    Some(sample) => format!("{:?}", sample),
+                    None => "None".to_string(),
+                }
             },
             _ => "".to_string(),
         }

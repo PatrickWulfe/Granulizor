@@ -3,6 +3,7 @@ extern crate hound;
 use hound::WavReader;
 use std::io::BufReader;
 use std::fs::File;
+use std::path::PathBuf;
 
 #[derive(Debug, Copy, Clone)]
 pub struct StereoFrame (pub f32, pub f32);
@@ -35,11 +36,12 @@ impl StereoFrame {
 
 #[derive(Debug)]
 pub enum Error {
-    Hound(hound::Error),
+    ParsingError,
     UnsupportedBitsPerSample(u16),
+    UnsupportedSampleFormat,
 }
 
-pub fn parse_wav(path: &str) -> Result<Vec<StereoFrame>, Error> {
+pub fn parse_wav(path: PathBuf) -> Result<Vec<StereoFrame>, Error> {
     // Use hound to open wav file and determine file format
     let reader = WavReader::open(path).unwrap();
     let spec = reader.spec();
@@ -53,7 +55,7 @@ pub fn parse_wav(path: &str) -> Result<Vec<StereoFrame>, Error> {
                 _ => return Err(Error::UnsupportedBitsPerSample(1)),
             },
             n => return Err(Error::UnsupportedBitsPerSample(n)),
-            _ => return Err(Error::UnsupportedBitsPerSample(2)),
+            _ => return Err(Error::UnsupportedSampleFormat),
         },
         hound::SampleFormat::Int => match spec.bits_per_sample {
             32 => match parse_wav_int(reader) {
@@ -64,7 +66,8 @@ pub fn parse_wav(path: &str) -> Result<Vec<StereoFrame>, Error> {
                 Ok(samples) => samples,
                 _ => return Err(Error::UnsupportedBitsPerSample(4)),
             },
-            _ => return Err(Error::UnsupportedBitsPerSample(5)),
+            n => return Err(Error::UnsupportedBitsPerSample(n)),
+            _ => return Err(Error::UnsupportedSampleFormat),
         },
     };
 
@@ -107,9 +110,14 @@ pub fn parse_wav_int(mut reader: WavReader<BufReader<File>>) -> Result<Vec<f32>,
 #[cfg(test)]
 mod tests {
     use wav_parser::parse_wav;
+    use find_folder;
+    use std;
 
     #[test]
     fn test_parse_wav() {
-        println!("{:?}", parse_wav("E:\\Devel\\Repositories\\School\\Granulizor\\assets\\pads.wav").unwrap().len());
+        let mut dll_folder = std::env::current_dir().unwrap();
+        let mut path = find_folder::Search::ParentsThenKids(5, 5).of(dll_folder).for_folder("assets").unwrap();
+        path.push("pads.wav");
+        println!("{:?}", parse_wav(path.join("pads.wav")).unwrap().len());
     }
 }

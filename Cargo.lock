@@ -1,16 +1,4 @@
 [[package]]
-name = "Granulizor"
-version = "0.1.0"
-dependencies = [
- "find_folder 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "hound 3.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "instrument 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "pitch_calc 0.11.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sample 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "vst 0.0.1 (git+https://github.com/rust-dsp/rust-vst)",
-]
-
-[[package]]
 name = "bitflags"
 version = "0.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -43,6 +31,18 @@ dependencies = [
 name = "fuchsia-zircon-sys"
 version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "granulizor"
+version = "0.1.0"
+dependencies = [
+ "find_folder 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hound 3.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "instrument 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pitch_calc 0.11.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sample 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "vst 0.0.1 (git+https://github.com/rust-dsp/rust-vst)",
+]
 
 [[package]]
 name = "hound"

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Granulizor.iml" filepath="$PROJECT_DIR$/Granulizor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/granulizor.iml" filepath="$PROJECT_DIR$/granulizor.iml" />
     </modules>
   </component>
 </project>

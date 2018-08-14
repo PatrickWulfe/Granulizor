@@ -34,10 +34,18 @@ pub fn repitch(orig_freq: f64, new_freq: f64, mut samples: Vec<StereoFrame>) -> 
 mod tests {
     use wav_parser::parse_wav;
     use pitcher::repitch;
+    use std;
+    use find_folder;
 
     #[test]
-    fn test_parse_wav() {
+    fn test_repitch_sample() {
         //println!("{:?}", parse_wav("E:\\Devel\\Repositories\\School\\Granulizor\\assets\\pads.wav").unwrap().len());
-        println!("{:?}", repitch(1.0, 2.0, parse_wav("E:\\Devel\\Repositories\\School\\Granulizor\\assets\\pads.wav").unwrap()));
+        //
+        let mut dll_folder = std::env::current_dir().unwrap();
+        let mut path = find_folder::Search::ParentsThenKids(5, 5).of(dll_folder).for_folder("assets").unwrap();
+        path.push("pads.wav");
+        println!("{:?}", path.file_name());
+        path.set_file_name("pads.wav");
+        println!("{:?}", repitch(1.0, 2.0, parse_wav(path).unwrap()));
     }
 }

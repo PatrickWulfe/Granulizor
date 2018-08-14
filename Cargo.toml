@@ -1,5 +1,5 @@
 [package]
-name = "Granulizor"
+name = "granulizor"
 version = "0.1.0"
 authors = ["wulfep <pwulfe@pdx.edu>"]
 
@@ -12,5 +12,5 @@ find_folder = "0.3.0"
 instrument = "0.2.0"
 
 [lib]
-name = "Granulizor"
-crate-type = ["dylib"]
+name = "granulizor"
+crate-type = ["rlib", "dylib"]
